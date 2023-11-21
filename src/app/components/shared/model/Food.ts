@@ -4,7 +4,7 @@ export class Food{
     price!:number;
     tags?:string[];
     favourite!:boolean;
-    stars!:number;
+    stars?:number;
     imageUrl!:string;
     origins!:string[];
     cookTime!:string;

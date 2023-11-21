@@ -9,6 +9,7 @@ import { Food } from '../../shared/model/Food';
 })
 export class HomeComponent implements OnInit {
   foods: Food[] = [];
+  origins:any;
   constructor(private foodService: FoodService) {
     this.foods = this.foodService.getAll();
   }
