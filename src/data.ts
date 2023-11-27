@@ -1,3 +1,4 @@
+import { Tags } from "./app/components/shared/Tag";
 import { Food } from "./app/components/shared/model/Food";
 
 export const sample_foods: Food[] = [
@@ -66,5 +67,15 @@ export const sample_foods: Food[] = [
     stars: 4.0,
     imageUrl: '/assets/images/foods/food-6.jpg',
     tags: ['FastFood', 'Pizza', 'Lunch'],
-  },
+  }
 ];
+export const sample_tags:Tags[]=[
+  { name: 'All', count: 6 },
+  { name: 'FastFood', count: 4 },
+  { name: 'Pizza', count: 2 },
+  { name: 'Lunch', count: 3 },
+  { name: 'SlowFood', count: 2 },
+  { name: 'Hamburger', count: 1 },
+  { name: 'Fry', count: 1 },
+  { name: 'Soup', count: 1 }
+]
