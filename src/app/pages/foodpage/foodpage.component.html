@@ -1,0 +1,16 @@
+<div class="container">
+   <div *ngFor="let food of foods">
+    <img [src]="food.imageUrl"[alt]="food.name"/>
+    <div class="details">
+        <div class="header">
+            <span class="name">{{food.name}}</span>
+            <span class="favourite  {{food.favourite?'':'not Favourite'}}">❤</span>
+            <span class="origin">{{food.origins}}</span>
+            <span class="tags"><a routerLink="/tags/{{food.tags}}">{{food.tags}}</a></span>
+            <span class="cook-time">Time To Cook <strong>{{food.cookTime}}</strong>Minutes</span>
+            <span class="price">{{food.price| currency}}</span>
+        </div>
+        <button>Add To Cart</button>
+    </div>
+</div>
+</div>
