@@ -1,0 +1,12 @@
+<app-title [title]="title" [margin]="value"></app-title>
+
+
+<div class="container">
+    <ul>
+        <li *ngFor="let cartItem of cart.items">
+            <div>
+                <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
+            </div>
+        </li>
+    </ul>
+</div>
